@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	
+	<script>
+
+		var myFirstVariable= 8;
+
+		function button1(){
+
+			html="<p>Hello world</p><img src='pug.jpg'>";
+
+			document.getElementById("content").innerHTML =html;
+		}
+
+		function button2() {
+			html= "<img src='.jpg'>";
+
+ 			document.getElementById("content").innerHTML= html;	
+		}
+
+	</script>
+
+
+	<style>
+		#content {
+			background: grey;
+		}
+
+		.assessment{
+			background: red;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	
+	<h1>Sprit Animal Quiz</h1>
+
+
+	<button onclick="button1()">Button 1</button>
+	<button onclick="button2()">Button 2</button>
+	<button>Botton 3</button>
+	
+	<div class="assessment">
+		
+		<h3>Assessment</h3>
+		<div id="content">
+		
+		</div>
+
+	
+		
+	</div>
+
+</body>
+	
+</html>
+
