@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <title>Find Your Brith Flower</title>
+
+  	<script>
+
+  		var myFirstVariable = 8;
+
+  		function button1() {
+
+  			html = "<p>January: Carnation</p><img src='jan.jpg' class='imgSize'>";
+
+  			document.getElementById("content").innerHTML = html;
+
+  		}
+
+
+  		function button2() {
+
+  			html = "<p>Febuary: Violet </p> <img src='violet.jpg' class='imgSize'>";
+  			
+  			document.getElementById("content").innerHTML = html;
+
+  		}
+
+  		
+
+
+  	</script> 
+
+  	<style>
+  		.assessment {
+  			background: pink;
+  		}
+  		#content {
+  			background:white ;
+  		}
+
+  		.imgSize {
+  			width: 50%;
+  			height: 50%;
+  		}
+
+  	</style>
+
+  </head>
+
+  <body>
+
+  	<h1>Find Your Birth Flower</h1>
+
+  	<button onclick="button1()">January</button>
+  	<button onclick="button2()">Fabuary</button>
+  	
+
+  	<div class="assessment">
+  		<h3>Content</h3>
+
+  		<div id="content">
+
+
+
+  		</div>
+  	</div>
+
+  </body>
+
+ </html>
