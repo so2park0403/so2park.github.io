@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+
+	<title></title>
+
+	<style>
+		 
+		 body {
+		 		background:grey  
+
+		  }
+	</style>
+
+		<script>
+			
+			var myFirstVariable = "valuehere";
+
+			var myFirstArray = ["apple", "orange","3"];
+
+			var mySecondArray = [1,2,3];
+
+			var colors = ["#FFBBFF","#FFFF00","#BFFF00", "BBFFF0"];
+
+			/*alert(myFirstArray);
+			console.log (myFirstArray);
+
+			alert(myFirstArray[1]);
+           
+			if(myFirstArray[1] == "orange") {
+				alert("orange is found");
+
+			}
+
+			else{
+				alert("no 3 is found");
+
+			}
+			  */
+
+
+				function moodChange() {
+					/*let button = document.getElementById("moodButton");
+
+					if (button. value == "0"){
+
+						document.body.style.backgroundColor = colors [0];
+						button.value ="1"
+						console.log
+					} 
+
+					else {
+						document.body.style.backgroundColor= color[1];
+						button.value = '0';
+					}
+					*/
+					buttonVal = document.getElementById("moodButton");
+					if(buttonVal.value == 0){
+					
+						document.body.style.backgroundColor = colors[0];
+						buttonVal.value = 1;
+					}
+
+					/* else if (buttonVal.value == 1){
+						document. body.style.backgroundColor = colors[1];
+						buttonVal.value = 2;
+					}
+					*/
+
+					else{
+						document. body.style.backgroundColor = colors[1];
+						buttonVal.value = 0;
+
+					}
+				}
+
+				function moodChange2() {
+					var buttonVal = document.getElementById("moodButton");
+					var vlaue =  buttonVal.value;
+					console.log
+					
+					switch(value){
+						case "0":
+						document.body.style.backgroundColor = colors[0];
+						buttonVal.value = "1"; 
+							break;
+						
+						case "1":
+						document. body.style.backgroundColor = colors[1];
+						buttonVal.value = "2";
+							break;
+							
+						case "2":
+						document. body.style.backgroundColor = colors[2];
+						buttonVal.value = "3";
+							break;
+
+						case "3":
+						document. body.style.backgroundColor = colors[3];
+						buttonVal.value = "0";
+							break;
+
+
+						default:
+							document. body.style.backgroundColor = "grey";
+
+
+					}
+
+				}
+
+		</script>
+
+</head>
+<body>
+  
+  <button id= "moodButton" value="0" onclick="moodChange()">Change Mood</button>
+
+
+</body>
+  
+</html>
+
