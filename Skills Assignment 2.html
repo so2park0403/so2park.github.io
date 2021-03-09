@@ -1,61 +1,28 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-  <title> Login </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="style1.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+  <title>Quiz App</title>
 </head>
-  
-  <style type="text/css">
-
-        div{
-          width:500px; 
-          height: 500px;
-          border: 1px solid black;
-          margin:0 auto;
-          padding: 150px;
-          box-sizing: border-box;
-
-        }
-    
-  </style>
 <body>
-  <center><h1> Welcome!</h1></center>
-  <hr>
-
-  <div>
-        username:<br>
-        <input type="text" name="text" id="username">
-        <br><br>
-
-        password:<br>
-        <input type="password" name="text"id="password">
-        <br><br>
-
-        <button onclick="login()">Login</button>
-
-
+  <div class="container">
+    <div id="question-container" class="hide">
+      <div id="question">Question</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Start</button>
+      <button id="next-btn" class="next-btn btn hide">Next</button>
+    </div>
   </div>
-<script type="text/javascript">
-  
-    function login(){
-
-          var uname=document.getElementById('username').value;
-          var pass=document.getElementById('password').value;
-          if (uname=="soyi"&& pass=="123") 
-            {
-              location.assign("file:///C:/Users/so2pa/Desktop/so2park.github.io/page.html");
-            }
-            else{
-              window.alert("login failed");
-            }
-    }
-
-</script>
-
 </body>
-   
-
-  
 </html>
-
