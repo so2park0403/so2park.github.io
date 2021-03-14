@@ -9,11 +9,11 @@
 		<script>
 			var laptopColor = ['black', 'silver', 'gold'];
 			alert(laptopColor[0]);
-			function laptopType(name,color,number){
+			function laptopType(name,color,number,brand){
 				this.name = name;
 				this.color= color;
 				this.length= length;
-				this.type= type;
+				this.brand= brand;
 				this.notice = function(){
 					alert(this.name + "has" + this.color+ "laptop.");
 
@@ -24,9 +24,9 @@
 			var laptop = {//object
 				color:'black', 
 				length:13, 
-				type:'apple'
+				brand:'apple'
 				notice:function(){
-					alert("The laptop is"+this.type);
+					alert("The laptop is"+this.brand);
 				}
 			}
 
@@ -38,7 +38,7 @@
 
 
 
-			var barbraHair= new hairType ('soyi','black','13', 'apple')
+			var barbraHair= new laptopType ('soyi','black','13', 'apple')
 			console.log(laptop); 
 
 			for (x in laptop){ //(var name /in/ object) 
