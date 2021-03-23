@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+</head>
+
+<body>
+
+   	
+   	<div class="game-info">
+   			<div>
+   				Remaining time: <span class="time">0</span>sec
+   			</div>
+   			
+   	</div>
+   
+
+
+    <script>
+
+let time = 20;
+let isPlaying = false;
+
+
+const timeDisplay = document.querySelector ('.time');
+
+
+setInterval(countDown,1000); //countdown by 1 second
+
+function countDown(){
+	time > 0 ? time-- : isPlaying = false; //if time is over 0 sec, timer subtracts by 1 sec: if it is 0 sec timer stays 0 sec
+	timeDisplay.innerText= time;
+}	
+
+
+   	</script>
+
+
+
+</body>
+</html>
