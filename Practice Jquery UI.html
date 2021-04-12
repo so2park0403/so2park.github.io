@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+	<title>  Practice: Jquery UI </title>
+	
+
+		
+<style>
+	
+	.btn{
+		width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background: pink;
+    color:white;
+    text-align: center;
+    cursor:pointer;
+	}
+	
+</style>
+
+</head>
+
+ 
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<body>
+
+<div id="accordion">
+<div class="btn"> Seoul</div>
+<div class="btn"> Tokyo</div>
+<div class="btn"> New York</div>
+<div class="btn"> Paris</div>
+
+</div>
+
+<script>
+		$( document).ready(function(){
+      $(".btn").hover(function(){
+        $(this).css({
+          "background":"skyblue",
+          "transition":"0.7s"
+
+        })
+      }, function(){
+        $(this).css({
+          "background":"pink",
+          "transition":"0.5s"
+        })
+
+       })  
+
+    });
+    $( function() {
+        $( "#accordion" ).accordion();
+        active:2
+      } );
+
+</script>
+
+
+</body>
+  
+</html>
+
+
+

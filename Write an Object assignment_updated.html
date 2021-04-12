@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+	<title> Writing Objects</title>
+
+
+		<script>
+			var laptopColor = ['black', 'silver', 'gold'];
+			alert(laptopColor[0]);
+			function laptopType(name,color,length,brand){
+				this.name = name,
+				this.color= color,
+				this.length= length,
+				this.brand= brand,
+				this.notice = function(){
+					alert(this.name + "has" + this.color+ "laptop.");
+
+				}
+
+			}
+
+			var laptop = {//object
+				color:'black', 
+				length:13, 
+				brand:'apple',
+				notice:function(){
+					alert('The laptop is' +this.brand);
+				}
+			}
+
+			alert(laptop['color']);
+			alert (laptop.length);
+
+			laptop.name= "soyi";
+
+
+
+
+			var laptop1= new laptopType ('soyi','black','13', 'apple')
+			console.log(laptop1); 
+
+			for (x in laptop){ //(var name /in/ object) 
+				console.log (laptop[x]);
+			}
+
+		</script>
+
+</head>
+
+<body>
+
+
+<button onclick="laptop.notice()"> click here</button>
+
+
+</body>
+  
+</html>
+
