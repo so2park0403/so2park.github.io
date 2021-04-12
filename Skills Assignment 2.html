@@ -7,7 +7,68 @@
   <link href="style1.css" rel="stylesheet">
   <script defer src="script.js"></script>
   <title>Quiz App</title>
+</head><!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+ <link rel="stylesheet" href="style2.css">
+  <title> Animal Matching Game</title>
+  <script>
+
+    function check(){
+      
+       var a="Correct";
+       var b= "Wrong";
+         var q1= document.quiz.question1.value;
+         if (q1== "Cat") {
+          document.write(a);
+
+         }
+          
+         else{
+          document.write(b);
+
+         }
+    }
+    function back(){
+      
+
+    }
+
+    
+    
+  </script>
+ 
+
 </head>
+
+<body>
+
+    <div class="header">
+      <h1>Animal Matching Game</h1>
+   </div>
+
+  <img src="cat.jpg" style="width:50%">
+  
+<form name ="quiz" id="quiz">
+  <div>
+    <p>What is the name of this animal?</p>
+      <p> <input type="radio" name="question1" value="Tiger"> Tiger</p>
+      <p> <input type="radio" name="question1" value="Cat"> Cat</p>
+      <p> <input type="radio" name="question1" value="Dog"> Dog</p>
+      <p> <input type="radio" name="question1" value="Monkey"> Monkey</p>
+  </div>
+
+  <input type="button" name="" value="Next" onclick="check()">
+  <input type="button" name="" value="Back" onclick="back()">
+</form>
+
+</body>
+  
+</html>
+
+
 <body>
   <div class="container">
     <div id="question-container" class="hide">
