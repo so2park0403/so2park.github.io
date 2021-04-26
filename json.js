@@ -262,13 +262,5 @@ var insideJSON = [
       "photo": "mexican_golden_barrel_cactus.jpg",
       "name": "Echinocactus Grusonii",
       "productId": 33
-    },
-    {
-      "category": "Cacti & Succulents",
-      "price": 16.99,
-      "instructions": "The plants should be kept almost completely dry during the winter months, once a month should be fine.",
-      "photo": "opuntia_cactus.jpg",
-      "name": "Opuntia Falcata",
-      "productId": 34
     }
   ]
