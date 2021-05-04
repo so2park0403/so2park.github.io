@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Skills Assignment 3</title>
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <script src="events.js"> </script>
+</head>
+<body>
+ 
+<div id="tabs">
+  <ul>
+    <li><a href="#tab1"><span>Little Café</span></a></li>
+    <li><a href="#tab2"><span>Big Hall</span></a></li>
+    <li><a href="#tab3"><span>Smokey Club</span></a></li>
+  </ul>
+  <div id="tab1">
+  <script>document.write(insideJSON[0].artist)</script> 
+  </div>
+  <div id="tab2">
+     <script>document.write(insideJSON[1].artist) </script> 
+  <div id="tab3">
+     <script>document.write(insideJSON[2].artist) </script> 
+  </div>
+</div>
+ 
+<script>
+$( function() {
+    $( "#tabs" ).tabs();
+  } );
+
+</script>
+ 
+</body>
+</html>
