@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+</head>
+<script>
+</script>
+<body>
+<h1>weather api</h1>
+<h2> - Current Weather</h2>
+<div class="ctemp">Current Temp: </div>
+<div class="clowtemp">Low: </div>
+<div class="chightemp">High: </div>
+<div class="cicon">Icon:</div>
+<script>
+	$.getJSON('http://api.openweathermap.org/data/2.5/forecast?id=5128581&appid=cabfedafb204b9bc053d119cea4fffe1&units=metric',
+	 function(data){
+		var $minTemp = data.list[0].main.temp_min;
+		var $maxTemp = data.list[0].main.temp_max;
+		var $cTemp = data.list[0].main.temp;
+		var $cDate = data.list[0].dt_txt;
+		var $wIcon = data.list[0].weather[0].icon; 
+
+		$('.clowtemp').append($minTemp);
+		$('.ctemp').append($cTemp);
+		$('.chightemp').append($maxTemp);
+		$('h2').prepend($cDate);
+		$('.cicon').append('<img src ="http://openweathermap.org/img/w/'+ $wIcon + '.png"/>');
+
+	});
+
+</script>
+</body>
+</html>
+
+
