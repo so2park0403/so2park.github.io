@@ -4,11 +4,52 @@
 <title>Weather</title>
     <meta charset="utf-8">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<style>
+	
+	.ctemp, .clowtemp, .chightemp{
+	
+    background: pink;
+    color:white;
+    text-align: left;
+    width: 160px;
+    height: 40px;
+
+	}
+
+	
+	.cicon{
+	width: 160px;
+    height: 100px;
+    background: pink;
+    color:white;
+    text-align: left;
+
+	}
+	h1{
+	
+    color:pink;
+    text-align: left;
+    width: 500px;
+    height: 40px;
+  
+	}
+	h2{
+	
+    background: pink;
+    color:white;
+    text-align: left;
+    width: 500px;
+    height: 40px;
+  
+	}
+</style>
+
 </head>
 <script>
 </script>
 <body>
-<h1>weather api</h1>
+<h1>New York</h1>
 <h2> - Current Weather</h2>
 <div class="ctemp">Current Temp: </div>
 <div class="clowtemp">Low: </div>
@@ -28,6 +69,25 @@
 		$('.chightemp').append($maxTemp);
 		$('h2').prepend($cDate);
 		$('.cicon').append('<img src ="http://openweathermap.org/img/w/'+ $wIcon + '.png"/>');
+
+		$( document).ready(function(){
+      $(".ctemp,.clowtemp,.chightemp,.cicon").hover(function(){
+        $(this).css({
+          "background":"skyblue",
+          "transition":"0.7s"
+
+        })
+      }, function(){
+        $(this).css({
+          "background":"pink",
+          "transition":"0.5s"
+        })
+
+       })  
+
+    });
+
+
 
 	});
 
